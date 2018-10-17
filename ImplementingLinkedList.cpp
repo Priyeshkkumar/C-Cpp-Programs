@@ -30,4 +30,6 @@ int main()
 		third -> next = NULL ;
 		
 		cout<<third -> data ;
+		
+		return 0 ;
 } 
