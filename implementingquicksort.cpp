@@ -54,12 +54,14 @@ int main()
 	cout<<"Enter number of elements:" ;
 	cin>>n ;
 	int arr[n] ;
+	cout<<"Enter elements:" ;
 	for( int i = 0 ; i < n ; i++ )
 	cin>>arr[i] ;
 	
 	quicksort( arr , 0 , n-1 ) ;
 	
-	for( int i = n-1 ; i >= 0 ; i-- )
+	cout<<"Sorted Array(ascending):" ;
+	for( int i = 0 ; i < n ; i++ )
 	cout<<arr[i]<<" " ;
 	
 }
