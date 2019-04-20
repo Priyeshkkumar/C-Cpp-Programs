@@ -64,7 +64,6 @@ void addatend()
 		p->next = temp ;
 		
 	}
-	
 }
 void addatpos() 
 {
