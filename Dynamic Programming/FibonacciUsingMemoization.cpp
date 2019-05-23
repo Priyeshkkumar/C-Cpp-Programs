@@ -2,7 +2,7 @@
 
 using namespace std ;
 
-int fib( int arr[] , int n )
+ long long int fib( long long int arr[] , long long int n )
 {    
     if( n == 0 )
     arr[0] = 0 ;
@@ -18,7 +18,7 @@ int main()
     cout<<"Enter number for fibonacci sequence:" ;
     cin>>n ;
 
-    int arr[n] ;
+    long long int arr[n] ;
 
     for( int i = 2 ; i <= n ; i++ )
         arr[i] = -1 ;
