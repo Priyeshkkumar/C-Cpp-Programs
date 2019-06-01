@@ -1,3 +1,5 @@
+//Implementing chaning in hashing..
+
 #include<iostream>
 
 #define Max 10 
