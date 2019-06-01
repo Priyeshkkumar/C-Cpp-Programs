@@ -1,5 +1,3 @@
-
-
 //Menu Driven Program Implementing Manipulations in Singly linked list..
 
 #include<iostream>
@@ -23,7 +21,7 @@ node createnode()
 	temp = new( struct linkedlist ) ;
 	temp->data = value ;
 	temp->next = NULL ;
-	return temp ;
+	return temp ;	
 	
 }
 
