@@ -9,7 +9,7 @@ using namespace std ;
 
 int insert() ;
 int hashfunction(int) ;
-void displaye() ;
+int displaye() ;
 
 struct ll
 {
@@ -18,34 +18,49 @@ struct ll
 } *head[Max] ;
 
 int main()
-{	int choice ;
+{	
+    cout<<"Hello!" ;
+    for( int i = 0 ; i < Max ; i++ )
+    {
+        head[i] = NULL ;
+    }
+
+    int choice ;
 	do
 	{
 	cout<<"\nEnter Choice:\n1.Insert Element \n2.Display List:\n3.Exit:\t ";
 	cin>>choice ;
 	switch(choice)
 	{
+
         case 1 : insert() ;
                  break ;
+
 		case 2 : displaye() ;
-		         break ; 		 		    		 		    		        
-		default : return 0 ;
+		         break ;
+
+		case 3 : break ;
 	}
 	}while(choice != 3 ) ;
 
     return 0 ;
 }
 
-void displaye()
+int displaye()
 {
     cout<<"Elements are:" ;
     for( int i = 0 ; i < Max ; i++ )
     {
-        node p = head[i] ;
-        cout<<head[i]->data<<"->" ;
-        while( p->next != NULL )
+        if (head[i] == NULL)
         {
-            cout<<p->data<<" " ;
+            continue;
+        }
+        
+        cout<<"\n" ;
+        node p = head[i] ;
+        while( p != NULL )
+        {
+            cout<<p->data<<" "<<"->" ;
             p = p->next ;
         }
     }
@@ -63,14 +78,14 @@ int insert()
     cout<<"Enter element: " ;
     cin>>e ;
     key = hashfunction(e) ;
-    temp = new( struct ll ) ;
-    temp->data = key ;
+    temp = new ll  ;
+    temp->data = e ;
     temp->next = NULL ;
 
     if( head[key] == NULL )
     {
         head[key]= temp ;
-        head[key]->next = NULL ;
+        //head[key]->next = NULL ;
     }
     else
     {
