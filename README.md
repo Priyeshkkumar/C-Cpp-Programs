@@ -19,5 +19,15 @@ Programs implementing Data Structures and Algorithms.
   - Max Distance between two unequal elements.
 
 ### 3. Data Structures
+  - Chaining and Hashing
+  - Direct Address Tables
+  - Linked List Implementation
+  - Linked List Implementation with user given input
+  - Stack using STL
+  - Stack using arrays
+  - Stack using Linked Lists
+  - Infix to Postfix using stack
+  - Menu Driven Linked List program
+  - Doubly Linked List
 
 ### 4. Dynamic Programming
