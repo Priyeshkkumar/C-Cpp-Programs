@@ -16,6 +16,7 @@ Programs implementing Data Structures and Algorithms.
   - Quick Sort
 
 ### 2. Algorithms Used
+  - Max Distance between two unequal elements.
 
 ### 3. Data Structures
 
